@@ -19,7 +19,7 @@ window.CONFIG = {
     {
       titulo: 'Leni',
       artista: 'Crystal Castles',
-      src: 'music/leni.mp3',
+      src: 'leni.mp3',
       nota: 'Suena cuando pienso en ti.'
     }
   ],
@@ -27,7 +27,7 @@ window.CONFIG = {
   /* Fotos del capítulo "Momentos". Puedes agregar todas las que quieras.
      pos = punto de enfoque de la foto (ej. 'center 20%' para ver más arriba). */
   fotos: [
-    { src: 'img/isabel-1.jpg', titulo: 'Tú',  pie: 'Sin esfuerzo, así eres.', pos: 'center 18%' },
-    { src: 'img/johan-1.jpg',  titulo: 'Yo',  pie: 'Pensando en cuándo te veo.', pos: 'center 28%' }
+    { src: 'isabel-1.jpg', titulo: 'Tú',  pie: 'Sin esfuerzo, así eres.', pos: 'center 18%' },
+    { src: 'johan-1.jpg',  titulo: 'Yo',  pie: 'Pensando en cuándo te veo.', pos: 'center 28%' }
   ]
 };
