@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Isabel ✦ una historia para ti</title>
+  <meta name="description" content="Algo que preparé para ti." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#07040e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Dancing+Script:wght@600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-locked">
+
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- ═════════ SOBRE DE ENTRADA ═════════ -->
+  <div class="gate" id="gate">
+    <p class="gate-kicker">Tengo algo para ti</p>
+    <button class="env" id="envelope" aria-label="Abrir el sobre">
+      <span class="env-back"></span>
+      <span class="env-paper"><span class="env-paper-name" data-name>Isabel</span></span>
+      <span class="env-front"></span>
+      <span class="env-flap"></span>
+      <span class="env-seal" aria-hidden="true">♥</span>
+    </button>
+    <p class="gate-hint">Toca el sobre para abrirlo</p>
+  </div>
+
+  <!-- ═════════ HISTORIA ═════════ -->
+  <main id="story">
+
+    <!-- Portada -->
+    <header class="hero" id="hero" data-title="Inicio">
+      <div class="hero-inner">
+        <p class="hero-pre reveal">Para</p>
+        <h1 class="hero-name reveal" data-name>Isabel</h1>
+        <p class="hero-line reveal">Hay cosas que se sienten antes de decirse.</p>
+        <div class="scroll-cue reveal" aria-hidden="true"><span>Desliza</span><i></i></div>
+      </div>
+    </header>
+
+    <!-- Cap. I -->
+    <section class="chapter" id="cap1" data-title="Cuando estamos cerca">
+      <div class="wrap narrow">
+        <p class="eyebrow reveal"><i>✦</i> Capítulo I</p>
+        <h2 class="title reveal">Cuando estamos cerca</h2>
+        <p class="big reveal">Hay personas con las que el tiempo se siente distinto.</p>
+        <p class="big reveal">Contigo las horas pasan sin pesar, y cuando nos despedimos ya estoy pensando en cuándo vuelvo a verte.</p>
+        <p class="soft reveal">Esta página es para contarte, con calma, lo que pasa cuando estamos cerca.</p>
+      </div>
+    </section>
+
+    <!-- Cap. II -->
+    <section class="chapter" id="cap2" data-title="Lo que somos">
+      <div class="wrap">
+        <p class="eyebrow reveal"><i>✦</i> Capítulo II</p>
+        <h2 class="title reveal">Lo que somos</h2>
+        <div class="cards">
+          <article class="card glass reveal">
+            <span class="star" aria-hidden="true">✦</span>
+            <h3>La buena vibra</h3>
+            <p>Contigo todo fluye. La risa llega sola, la conversación no se acaba y hasta el silencio se siente en casa.</p>
+          </article>
+          <article class="card glass reveal">
+            <span class="star" aria-hidden="true">✦</span>
+            <h3>La madurez</h3>
+            <p>Dos personas que saben lo que quieren. Hablamos claro, nos respetamos y avanzamos sin juegos.</p>
+          </article>
+          <article class="card glass reveal">
+            <span class="star" aria-hidden="true">✦</span>
+            <h3>Las ganas</h3>
+            <p>Se notan en cómo buscamos el momento de vernos y en lo poco que queremos que ese momento termine.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cap. III -->
+    <section class="chapter" id="cap3" data-title="Momentos">
+      <div class="wrap">
+        <p class="eyebrow reveal"><i>✦</i> Capítulo III</p>
+        <h2 class="title reveal">Momentos</h2>
+        <p class="soft center reveal">Lo mejor de este álbum es que todavía le faltan páginas.</p>
+        <div class="polaroids" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- Cap. IV -->
+    <section class="chapter" id="cap4" data-title="Una canción para ti">
+      <div class="wrap narrow">
+        <p class="eyebrow reveal"><i>✦</i> Capítulo IV</p>
+        <h2 class="title reveal">Una canción para ti</h2>
+        <p class="soft center reveal">Hay canciones que suenan distinto cuando piensas en alguien. Esta es la mía contigo.</p>
+        <div class="tracks reveal" id="trackList"></div>
+      </div>
+    </section>
+
+    <!-- Cap. V -->
+    <section class="chapter" id="cap5" data-title="La carta">
+      <div class="wrap narrow">
+        <p class="eyebrow reveal"><i>✦</i> Capítulo V</p>
+        <h2 class="title reveal">La carta</h2>
+        <article class="letter glass reveal">
+          <p class="letter-date">Octubre de 2026</p>
+          <p class="letter-hi"><span data-name>Isabel</span>,</p>
+
+          <p>Hay personas con las que el tiempo se siente distinto. Contigo las horas pasan sin pesar, y cuando nos despedimos ya estoy pensando en cuándo vuelvo a verte.</p>
+
+          <p>Me gusta lo que pasa cuando estamos cerca. La conversación fluye sin esfuerzo, la risa llega sola y hasta el silencio se siente cómodo. Contigo no tengo que fingir ni medir lo que digo. Esa buena vibra entre los dos es de las cosas que no se explican: solo se sienten.</p>
+
+          <p>También me gusta lo que somos como personas. Los dos llegamos a este punto con historia, con aprendizajes y con la madurez de saber lo que queremos y lo que no. No estamos jugando ni corriendo: hablamos claro, nos respetamos y nos escuchamos. Para mí, eso vale más que cualquier promesa bonita.</p>
+
+          <p>Y sí, hay ganas. Muchas. Las tuyas y las mías se encuentran en el medio, y eso me emociona más de lo que te he dicho. Quiero más de esos momentos: más tardes contigo, más conversaciones largas, más de ti.</p>
+
+          <p>Por eso quiero que sepas algo con claridad: lo que quiero contigo va en serio, y quiero que seas mi novia. La pregunta todavía no te la hago. La guardo para un día que ya está muy cerca, porque quiero ver tu cara cuando llegue. Mientras tanto, solo te pido que disfrutes esta página como yo disfruté hacerla, y que cuentes los días conmigo.</p>
+
+          <p>Gracias por ser tú.</p>
+
+          <p class="letter-sign">Con mucho cariño,<br /><strong>Johan Petro</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cap. VI -->
+    <section class="chapter finale-chapter" id="cap6" data-title="Pronto">
+      <div class="wrap narrow">
+
+        <div class="since glass reveal">
+          <p class="since-label">Desde aquel día</p>
+          <p class="since-date">6 de octubre de 2026</p>
+          <div class="clock" id="clockSince">
+            <div><b data-u="d">00</b><small>días</small></div><span>:</span>
+            <div><b data-u="h">00</b><small>horas</small></div><span>:</span>
+            <div><b data-u="m">00</b><small>min</small></div><span>:</span>
+            <div><b data-u="s">00</b><small>seg</small></div>
+          </div>
+        </div>
+
+        <div class="finale reveal" id="finale" data-state="locked">
+          <p class="eyebrow center"><i>✦</i> Capítulo final</p>
+
+          <div class="seal-big" aria-hidden="true"><span>♥</span></div>
+
+          <!-- Estado bloqueado -->
+          <div class="finale-locked">
+            <h2 class="finale-script">Pronto…</h2>
+            <p class="soft center">Hay una pregunta que todavía no te hago. Está escrita con tu nombre y ya tiene fecha.</p>
+            <div class="clock big" id="clockUntil">
+              <div><b data-u="d">00</b><small>días</small></div><span>:</span>
+              <div><b data-u="h">00</b><small>horas</small></div><span>:</span>
+              <div><b data-u="m">00</b><small>min</small></div><span>:</span>
+              <div><b data-u="s">00</b><small>seg</small></div>
+            </div>
+          </div>
+
+          <!-- Estado desbloqueado -->
+          <div class="finale-open">
+            <h2 class="finale-script">Hoy es el día</h2>
+            <p class="big center">Hay una pregunta que llevo días guardando.</p>
+            <p class="soft center">Y quiero ver tu cara cuando te la haga.</p>
+          </div>
+        </div>
+
+        <p class="footer-sign reveal">— Johan ♥</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Constelación (navegación) -->
+  <nav class="rail" id="rail" aria-label="Capítulos"></nav>
+
+  <!-- Visor de fotos -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">×</button>
+    <img id="lbImg" alt="" />
+  </div>
+
+  <!-- Reproductor -->
+  <div class="player glass" id="player" hidden>
+    <button class="pl-btn" id="plPrev" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6 6h2v12H6zM9.5 12l8.5 6V6z"/></svg>
+    </button>
+    <button class="pl-btn pl-main" id="plPlay" aria-label="Reproducir o pausar">
+      <svg id="icPlay" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg id="icPause" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="display:none"><path d="M6 19h4V5H6zm8-14v14h4V5z"/></svg>
+    </button>
+    <button class="pl-btn" id="plNext" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg>
+    </button>
+    <div class="pl-meta">
+      <span class="pl-title" id="plTitle">—</span>
+      <span class="pl-sub" id="plSub">&nbsp;</span>
+      <div class="pl-bar" id="plBar"><i id="plFill"></i></div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
